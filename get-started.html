@@ -39,6 +39,16 @@
 	color:#f0f0f0;
 	text-shadow:none;
 }
+input, textarea, .uneditable-input{
+	width:500px;
+}
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input{
+	height:35px;
+	background:#F9F9F9;
+	border:solid 1px #E1EDFC;
+	box-shadow:none;
+	-webkit-border-radius:none;
+}
     </style>
     <link href="http://outfitters.bagshawgroup.com/stylesheets/bootstrap-responsive.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
@@ -131,7 +141,6 @@ target="hidden_iframe" onsubmit="submitted=true;">
 <div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
 <input type="text" name="entry.939832413" value="" class="ss-q-short" id="entry_939832413" dir="auto" aria-label="NAME  " aria-required="true" required="" title="">
 <div class="error-message" id="1180501945_errorMessage"></div>
-<div class="required-message">This is a required question</div>
 </div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
 <div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
 <label class="ss-q-item-label" for="entry_1724399759"><div class="ss-q-title">EMAIL
@@ -199,7 +208,7 @@ target="hidden_iframe" onsubmit="submitted=true;">
 
 <div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
 <input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">
-<div class="ss-password-warning ss-secondary-text">Never submit passwords through Google Forms.</div></td>
+<div style="display:none;" class="ss-password-warning ss-secondary-text">Never submit passwords through Google Forms.</div></td>
 </tr></tbody></table></div></ol></form>
        </div>
       </div>
