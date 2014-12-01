@@ -206,31 +206,7 @@ target="hidden_iframe" onsubmit="submitted=true;">
 <select name="entry.1900753840" id="entry_1900753840" aria-label="FREQUENTLY PURCHASED PROMOTIONAL ITEMS  " aria-required="true" required=""><option value=""></option>
 <option value="TEES">TEES</option> <option value="OUTERWEAR">OUTERWEAR</option> <option value="CORPORATE APPAREL">CORPORATE APPAREL</option> <option value="ACCESSORIES">ACCESSORIES</option> <option value="OTHER">OTHER</option></select>
 </div></div></div> 
-function doGet(e) { 
-  var app = UiApp.createApplication(); 
-  var panel = app.createVerticalPanel().setId('panel');
-  var fileUpload = app.createFileUpload().setName('theFile').setId('theFile');
-  var handler = app.createServerChangeHandler('uploadfile');
-  handler.addCallbackElement(panel);
-  fileUpload.addChangeHandler(handler);
-  panel.add(fileUpload);
-  app.add(panel);
-  return app;
-} 
 
-function uploadfile(e) 
-{ 
-// data returned which can be used to create a blob
-// assuming mime-type to be a zip file in this example
-  var fileBlob = Utilities.newBlob(e.parameter.thefile, "application/zip","myZippedFile.zip" );
-  var doc = DocsList.createFile(fileBlob);
-  var app = UiApp.getActiveApplication();
-  app.getElementById('panel').add(app.createLabel('File Uploaded successfully'));
-  return app;
-}
-<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry">
-<label class="ss-q-item-label" for="entry_2129154402"><div class="ss-q-title">LOGO/ARTWORK
-</div>
 <div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
 <input type="FileUpload" name="entry.2129154402" value="" class="ss-q-short" id="entry_2129154402" dir="auto" aria-label="LOGO/ARTWORK  " title="">
 <input id="filebutton" name="filebutton" class="input-file" type="file">
