@@ -253,35 +253,16 @@ body {
 
             </h3>
             <h3 style="text-align:center;">$9.38 <small style="color:#b56315;">1 color print included</small><br>
-<script src="https://checkout.stripe.com/checkout.js"></script>
-
-<button id="customButton">Purchase</button>
-
-<script>
-  var handler = StripeCheckout.configure({
-    key: 'pk_test_piv0lGaruPZ4TwFQYbJboHKc',
-    image: '/square-image.png',
-    token: function(token) {
-      // Use the token to create the charge with a server-side script.
-      // You can access the token ID with `token.id`
-    }
-  });
-
-  $('#customButton').on('click', function(e) {
-    // Open Checkout with further options
-    handler.open({
-      name: 'Demo Site',
-      description: '2 widgets ($20.00)',
-      amount: 2300
-    });
-    e.preventDefault();
-  });
-
-  // Close Checkout on page navigation
-  $(window).on('popstate', function() {
-    handler.close();
-  });
-</script>
+<form action="/charge" method="POST">
+  <script
+    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+    data-key="pk_test_piv0lGaruPZ4TwFQYbJboHKc"
+    data-image="/square-image.png"
+    data-name="Demo Site"
+    data-description="2 widgets ($20.00)"
+    data-amount="2000">
+  </script>
+</form>
             	<a style="text-decoration:none;" href="http://outfitters.bagshawgroup.com/get-started" class="button">Start Promoting</a>
             </h3>
 
