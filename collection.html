@@ -61,8 +61,17 @@ body{
 .navbar-static-top .navbar-inner {
   border-width: 0 0 1px;
 }
-		
-
+		.navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner{
+			box-shadow:0 1px 10px rgba(0, 0, 0, 0.1);
+			-webkit-box-shadow:0 1px 10px rgba(0, 0, 0, 0.1);
+			-moz-box-shadow:0 1px 10px rgba(0, 0, 0, 0.1);
+		}
+.navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner{
+	border-width:0 0 1px;
+}
+.navbar-inner{
+	border:1px solid #d4d4d4;
+}
 container-fluid {
 padding-right: 20px;
 padding-left: 20px;
