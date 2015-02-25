@@ -10,30 +10,27 @@
 		<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="http://outfitters.bagshawgroup.com/stylesheets/animated-default.css">
-		<link rel="stylesheet" type="text/css" href="http://outfitters.bagshawgroup.com/stylesheets/animated-component.css">
+		<link rel="stylesheet" type="text/css" href="http://outfitters.bagshawgroup.com/stylesheets/bootstrap.min.css">
+			<link rel="stylesheet" type="text/css" href="http://outfitters.bagshawgroup.com/stylesheets/cover.css">
+
 		<style type="text/css">
-		@media handheld{
-		.cbp-af-header h1{
+		body{
+			background:#fff;
+		}
+		 h1{
 				font-size:2.5em;
 				font-family:'Quicksand',sans-serif;
 				color:#0066cc;
 				font-weight:400;
 			}	
-		}
-		@media screen{
-			.cbp-af-header{
-				height:100px;
-				overflow:visible;
-				background:#ffffff;
-			}
-			.cbp-af-header h1{
+	
+			.cover-header h1{
 				font-size:4em;
 				font-family:'Quicksand',sans-serif;
 				color:#0066cc;
 				font-weight:400;
 			}
-			.cbp-af-header h1, .cbp-af-header nav a{
+			.masthead-nav > .active > a, .masthead-nav > .active > a:hover, .masthead-nav > .active > a:focus{
 				line-height:137px;
 				color:#4e4747;
 				font-family:'Lato';
@@ -66,7 +63,7 @@
 .main > section:nth-child(even) {
 	background:#efefef;
 }
-.main section p{
+.lead p{
 					font-size:1.5em;
 }
 .cbp-af-header img{
@@ -87,9 +84,35 @@
 		<script src="http://outfitters.bagshawgroup.com/javascripts/modernizr.custom.js"></script>
 	</head>
 	<body>
-		<div class="container">
+		<div class="site-wrapper">
+			<div class="site-wrapper-inner">
+			<div class="cover-container">
 
-			<div class="cbp-af-header">
+          <div class="masthead clearfix">
+            <div class="inner">
+              <img style="" class="masthead-brand" src="http://static.tumblr.com/sdfdumz/p8Nnkc8s1/bgohanger_transdkgry.png">
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li><a href="#">BLOG</a></li>
+                  <li><a href="#">GET STARTED</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="inner cover">
+            <h1 class="cover-heading">Beautiful & Stylish Branded Merchandise</h1>
+            <p class="lead">BG Outfitters partners with brands & ad agencies<br> to create beautiful & stylish merchandise.</p>
+            
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+            </div>
+          </div>
+
+        </div>
 				<div class="cbp-af-inner">
 					<h1><img style="margin:20px 0 0 20px;" src="http://static.tumblr.com/sdfdumz/p8Nnkc8s1/bgohanger_transdkgry.png"></h1>
 					<nav>
