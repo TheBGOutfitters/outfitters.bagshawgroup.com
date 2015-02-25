@@ -1,6 +1,7 @@
 <html lang="en" class="no-js"><head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<title>BG Outfitters: Dress Well | Promote Well</title>
 		<meta name="description" content="BG Outfitters develops beautiful & stylish merchandise for great brands">
 		<meta name="keywords" content="fixed header, animatied header, javascript, wed design, template, on scroll">
@@ -10,13 +11,21 @@
 		<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="http://outfitters.bagshawgroup.com/stylesheets/animated-default.css">
+		<link rel="stylesheet" type="text/css" href="http://outfitters.bagshawgroup.com/stylesheets/animated-component.css">
 		<style type="text/css">
-		
+		@media handheld{
+		.cbp-af-header h1{
+				font-size:2.5em;
+				font-family:'Quicksand',sans-serif;
+				color:#0066cc;
+				font-weight:400;
+			}	
+		}
+		@media screen{
 			.cbp-af-header{
 				height:100px;
 				overflow:visible;
 				background:#ffffff;
-				position:relative;
 			}
 			.cbp-af-header h1{
 				font-size:4em;
@@ -31,11 +40,8 @@
 				text-transform:uppercase;
 				font-weight:lighter;
 			}
-			.cbp-af-header nav a {
-font-size:1.1em;
-}
 			:-webkit-any(article,aside,nav,section) h1 {
-				font-size:75px;
+				font-size:5em;
 				font-family:'Quicksand',sans-serif;
 				font-weight:400;
 				text-transform:uppercase;
@@ -54,17 +60,14 @@ font-size:1.1em;
 				-webkit-margin-after:0.27em;
 				font-size-adjust: 0.5;
 }
-.container{
-margin-top:0;	
+.main{
+	margin-top:-45px;
 }
-
 .main > section:nth-child(even) {
 	background:#efefef;
 }
 .main section p{
 					font-size:1.5em;
-					padding:0;
-
 }
 .cbp-af-header img{
 	width:50%;
@@ -97,8 +100,8 @@ margin-top:0;
 			</div>
 			<div class="main">
 				<section>
-					<div><h1 style="">Beautiful & Stylish Branded Merchandise</h1>
-						<p style="">BG Outfitters partners with brands & ad agencies<br> to create beautiful & stylish merchandise.</p>
+					<div><h1 style="text-align:center;">Beautiful & Stylish Branded Merchandise</h1>
+						<p style="text-align:center;">BG Outfitters partners with brands & ad agencies<br> to create beautiful & stylish merchandise.</p>
 					</div>
 				</section>
 				
